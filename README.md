@@ -6,8 +6,10 @@ This project aimed to develop a sentiment analysis model to classify customer re
 ## Methodology
 1. **Data Collection:**  I scraped approximately 5,000 customer reviews on phone products from Dien May Xanh website using Selenium and Python. 
 2. **Preprocessing:**  Cleaned and transformed the raw text data using Python's Pandas library to prepare it for analysis.
-3. **Model Building:**  I trained and evaluated a Logistic Regression model with L2 regularization for sentiment classification using scikit-learn.
-4. **Evaluation:**  The model achieved an accuracy of 88% in predicting customer sentiment.
+   - **Spelling Correction:** A pre-trained Vietnamese language model from Hugging Face was used to correct spelling errors in the raw text data.
+   - **Text Vectorization:** Another pre-trained Vietnamese language model from Hugging Face was employed to convert the corrected text into numerical vector representations suitable for machine learning.
+4. **Model Building:**  I trained and evaluated a Logistic Regression model with L2 regularization for sentiment classification using scikit-learn.
+5. **Evaluation:**  The model achieved an accuracy of 88% in predicting customer sentiment.
 
 ## Tools and Technologies
 - Python (Selenium, Pandas, Matplotlib, scikit-learn)
